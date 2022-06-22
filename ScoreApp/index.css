@@ -3,17 +3,32 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  list-style: none;
 }
-
+:root {
+  /* color*/
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+}
+.text-Desaturated-blue {
+  color: var(--Desaturated-blue);
+}
+.text-size {
+  font-size: 1.2rem;
+}
+.text-Dark-blue {
+  color: var(--Dark-blue);
+}
 body {
   font-family: "Red Hat Display", sans-serif;
-  font-size: 16px;
   text-align: center;
-  background-color: hsl(225, 100%, 94%);
-  background-size: cover;
-  background-repeat: no-repeat;
+  line-height: 1.5;
+  background-color: var(--Pale-blue);
   background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .center {
@@ -30,136 +45,111 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 20px;
 }
+
 .image-size {
   width: 100%;
   object-fit: contain;
   border-radius: 20px 20px 0 0;
 }
 
-.order {
-  font-size: 2rem;
-  font-weight: 900;
-  margin-bottom: 25px;
-  margin-top: 25px;
+h2 {
+  font-weight: 700;
 }
-.order-context {
-  margin-bottom: 25px;
-  font-size: 1.3rem;
-  color: hsl(224, 23%, 55%);
+h4 {
+  margin: 25px 10px;
+  font-weight: 400;
+  color: var(--Desaturated-blue);
 }
 
 .price-container {
   background-color: rgba(128, 128, 128, 0.044);
   display: flex;
-  border-radius: 12px;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 16px;
   justify-content: space-between;
-  width: 100%;
-  margin-bottom: 50px;
+  margin: 30px 0;
+  padding: 10px 20px;
 }
 
-.music-price {
+.music-price-container {
   display: flex;
   align-items: center;
 }
 .annual-price-container {
-  padding: 30px;
-  font-size: 1.5rem;
+  padding: 15px;
 }
-
 .annual-plan {
   margin-bottom: 8px;
-  font-size: 1.3rem;
-  color: hsl(223, 47%, 23%);
+  color: var(--Dark-blue);
   font-weight: 900;
 }
 .annual-price {
   font-weight: 500;
-  font-size: 1.3rem;
-  color: hsl(224, 23%, 55%);
+  color: var(--Desaturated-blue);
 }
 .icon-size {
   width: 60px;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   /* position: relative;
   top: 30px; */
 }
 .change-text {
-  padding: 20px;
   margin-top: auto;
   margin-bottom: auto;
   font-weight: 500;
-  font-size: 20px;
 }
 
 .btn-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
 }
 .btn {
-  padding: 15px;
-  border: none;
+  padding: 18px;
   border-radius: 15px;
+  border: none;
 }
 .proceed-btn {
-  font-family: "Red Hat Display", sans-serif;
   margin-bottom: 10px;
-  background-color: hsl(245, 75%, 52%);
+  background-color: var(--Bright-blue);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  color: aliceblue;
-  font-weight: 900;
-  font-size: 16px;
+  color: var(--Very-pale-blue);
+  font-weight: 700;
 }
 .cancel-btn {
-  font-family: "Red Hat Display", sans-serif;
-  margin-top: 10px;
+  font-weight: 700;
   background-color: transparent;
-  color: hsl(224, 23%, 55%);
-  font-weight: 900;
-  font-size: 16px;
 }
 .container-margin {
   margin: 50px;
 }
 
+/*========= Hover ========== */
+.cancel-btn:hover {
+  color: var(--Dark-blue);
+  font-weight: 900;
+}
+.proceed-btn:hover {
+  opacity: 0.7;
+  font-weight: 900;
+}
+a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
 @media screen and (max-width: 500px) {
   .container-margin {
-    margin: 20px;
+    margin: 25px;
   }
   .center {
     width: 90%;
   }
-  .order {
-    font-size: 1.8rem;
-    margin-bottom: 16px;
-    margin-top: 10px;
-  }
-  .order-context {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-  .price-container {
-    margin-bottom: 25px;
-  }
-  .annual-price-container {
-    padding: 12px;
-  }
-  .annual-plan {
-    font-size: 1rem;
-  }
-  .annual-price {
-    font-size: 1rem;
-  }
-  .change-text {
-    font-size: 1rem;
-  }
   .icon-size {
     width: 50px;
-    padding-left: 10px;
-    position: relative;
-    top: 10px;
+  }
+  .text-size {
+    font-size: 1rem;
   }
 }
 
