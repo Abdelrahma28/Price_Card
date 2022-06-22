@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.center {
+  background-color: hsl(225, 100%, 98%);
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 20px;
+}
+.image-size {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 20px 20px 0 0;
+}
+
+.order {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.order-context {
+  margin-bottom: 25px;
+  font-size: 1.3rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.price-container {
+  background-color: rgba(128, 128, 128, 0.044);
+  display: flex;
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.music-price {
+  display: flex;
+}
+.annual-price-container {
+  padding: 30px;
+  font-size: 1.5rem;
+}
+
+.annual-plan {
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.annual-price {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: hsl(224, 23%, 55%);
+}
+.icon-size {
+  width: 60px;
+  padding-left: 20px;
+  position: relative;
+  top: 30px;
+}
+.change-text {
+  padding: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btn {
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+}
+.proceed-btn {
+  font-family: "Red Hat Display", sans-serif;
+  margin-bottom: 10px;
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  color: aliceblue;
+  font-weight: 900;
+  font-size: 16px;
+}
+.cancel-btn {
+  font-family: "Red Hat Display", sans-serif;
+  margin-top: 10px;
+  background-color: transparent;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+  font-size: 16px;
+}
+.container-margin {
+  margin: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .container-margin {
+    margin: 20px;
+  }
+  .center {
+    width: 90%;
+  }
+  .order {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+    margin-top: 10px;
+  }
+  .order-context {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .price-container {
+    margin-bottom: 25px;
+  }
+  .annual-price-container {
+    padding: 12px;
+  }
+  .annual-plan {
+    font-size: 1rem;
+  }
+  .annual-price {
+    font-size: 1rem;
+  }
+  .change-text {
+    font-size: 1rem;
+  }
+  .icon-size {
+    width: 50px;
+    padding-left: 10px;
+    position: relative;
+    top: 10px;
+  }
+}
+
+/* ### Primary
+
+hsl(225, 100%, 94%)
+hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%) */
